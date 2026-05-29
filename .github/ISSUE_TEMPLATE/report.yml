@@ -1,0 +1,25 @@
+name: Reportar Erro ou Sugestão
+description: Ajude-nos a melhorar o guia reportando um problema ou sugerindo algo novo.
+title: "[BUG/SUGESTÃO]: "
+labels: ["melhoria"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por querer melhorar o Guia Prático!
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: O que está errado ou o que você gostaria de adicionar?
+      placeholder: Ex: O comando docker run está com um erro de digitação no Capítulo 8.
+    validations:
+      required: true
+  - type: input
+    id: capitulo
+    attributes:
+      label: Capítulo Relacionado
+      placeholder: Ex: Capítulo 8 - Docker
+    validations:
+      required: false
